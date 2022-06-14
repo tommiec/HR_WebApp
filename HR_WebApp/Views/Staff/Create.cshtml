@@ -1,0 +1,23 @@
+﻿@model StaffCreateViewModel
+
+<form>
+    <div asp-controller="Staff" asp-action="Create" method="post">
+        <label asp-for="FirstName"></label>
+        <input asp-for="FirstName" class="form-control" />
+        <span asp-validation-for="FirstName" class="text-info"></span>
+
+        <label asp-for="LastName"></label>
+        <input asp-for="LastName" class="form-control" />
+        <span asp-validation-for="LastName" class="text-info"></span>
+
+        <label asp-for="Address"></label>
+        <input asp-for="Address" class="form-control" />
+        <span asp-validation-for="Address" class="text-info"></span>
+
+        <label asp-for="DOE"></label>
+        <input asp-for="DOE" class="form-control" />
+        <span asp-validation-for="DOE" class="text-info"></span>
+    </div>
+
+    <button class="btn btn-primary" type="submit">Toevoegen</button>
+</form>

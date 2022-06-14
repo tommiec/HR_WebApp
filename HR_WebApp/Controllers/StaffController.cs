@@ -23,6 +23,12 @@ namespace HR_WebApp.Controllers
                 DOE = x.DOE, // <-- nodig voor sorteren
             } );
             
+            return View(vm);
+        }
+
+
+        public IActionResult Create()
+        {
             return View();
         }
     }
